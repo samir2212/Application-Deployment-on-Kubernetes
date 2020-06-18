@@ -15,21 +15,35 @@ K8S enables you to change components quickly and as often as necessary to keep u
 
 2- Install the Docker utility on both the nodes by running the following command :
  ```
-sudo apt install docker.io.
+sudo apt install docker.io
 
  ```
-3-  sudo systemctl enable docker.
+3- Enable Docker on both the nodes:
+```
+sudo systemctl enable docker
+```
 
-4- sudo apt install curl.
+4- Run the following command in order to get the Kubernetes signing key:
+```
+ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
+ ```
 
-5- curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add.
+6- Run the following command on both the nodes in order to add the Xenial Kubernetes repository:
+```
+sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
+```
 
-6- sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main".
-
-7- sudo apt install kubeadm.
-
-8- sudo kubeadm init --pod-network-cidr=10.244.0.0/16.(on master node only)
-
-9- sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node).
+7- The final step in the installation process is to install Kubeadm on both the nodes through the following command:
+```
+sudo apt install kubeadm.
+```
+Run the following command to initialize Kubernetes on the master node:
+```
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16.
+```
+Deploy a Pod and node Network through the master node by running the following command:
+```
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node).
+```
 
 
