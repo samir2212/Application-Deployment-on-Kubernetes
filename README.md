@@ -8,7 +8,10 @@ K8S is container orchestrator used to automate, configure and scheduling of cont
 K8S enables you to change components quickly and as often as necessary to keep up with today’s rapidly changing business requirements.
 
 ## Steps to install Kubernetes on Ubuntu:
-1-sudo swapoff -a
+1- Disable swap memory on both the nodes
+ '''
+ sudo swapoff -a
+ '''
 
 2-  sudo apt install docker.io.
 
