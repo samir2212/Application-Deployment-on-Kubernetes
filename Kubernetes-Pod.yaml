@@ -1,0 +1,12 @@
+ apiversion: v1 
+ kind: Pod 
+ metadata:
+  name: mywebsite 
+  labels:
+   name: web 
+ spec:
+  containers:
+   name: mynginx
+  image: samir2296/containerization:latest 
+  ports:
+   containerPort: 80
