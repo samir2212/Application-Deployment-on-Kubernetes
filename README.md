@@ -35,15 +35,15 @@ sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
 7- The final step in the installation process is to install Kubeadm on both the nodes through the following command:
 ```
-sudo apt install kubeadm.
+sudo apt install kubeadm
 ```
-Run the following command to initialize Kubernetes on the master node:
+8- Run the following command to initialize Kubernetes on the master node:
 ```
-sudo kubeadm init --pod-network-cidr=10.244.0.0/16.
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
-Deploy a Pod and node Network through the master node by running the following command:
+9- Deploy a Pod and node Flannel Network through the master node by running the following command:
 ```
-sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node).
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node)
 ```
 
 
