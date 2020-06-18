@@ -48,8 +48,15 @@ sudo kubeadm join $controller_private_ip:6443 --token $token --discovery-token-c
 
 9- Deploy a Pod and node Flannel Network through the master node by running the following command:
 ```
-sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node)
+sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
-
+10- Run the following command to view the status of the network:
+```
+kubectl get pods --all-namespaces
+```
+11- run the following command on master to check the all nodes:
+```
+sudo kubectl get nodes
+```
 
 
