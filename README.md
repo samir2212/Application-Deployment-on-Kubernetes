@@ -41,9 +41,15 @@ sudo apt install kubeadm
 ```
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
+9- You can now join any number of machines by running the following on each node as root:
+```
+sudo kubeadm join $controller_private_ip:6443 --token $token --discovery-token-ca-cert-hash $hash
+```
+
 9- Deploy a Pod and node Flannel Network through the master node by running the following command:
 ```
 sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml. (Deploy a Pod Network on master node)
 ```
+
 
 
