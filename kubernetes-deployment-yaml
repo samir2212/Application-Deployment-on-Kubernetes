@@ -1,17 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  # Unique key of the Deployment instance
   name: mynginx-deployment
 spec:
+  # 3 Pods should exist at all times.
   replicas: 3
+  selector:
+    matchLabels:
+      app: web
   template:
     metadata:
       labels:
+        # Apply this label to pods and default
+        # the Deployment label selector to this value
         app: web
     spec:
       containers:
-        name: my-nginx
+      - name: nginx
+        # Run this image
         image: samir2296/containerization:latest
-  selector:
-   matchlabels:
-    app: web
+~
