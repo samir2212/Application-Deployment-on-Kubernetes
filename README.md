@@ -54,20 +54,20 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ```
 
-9- You can now join any number of machines by running the following on each node as root:
+10- You can now join any number of machines by running the following on each node as root:
 ```
 sudo kubeadm join $controller_private_ip:6443 --token $token --discovery-token-ca-cert-hash $hash
 ```
 
-9- Deploy a Pod and node Flannel Network through the master node by running the following command:
+11- Deploy a Pod and node Flannel Network through the master node by running the following command:
 ```
 sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
-10- Run the following command to view the status of the network and show the containers of K8S:
+12- Run the following command to view the status of the network and show the containers of K8S:
 ```
 kubectl get pods --all-namespaces
 ```
-11- Run the following command on master to check the all nodes:
+13- Run the following command on master to check the all nodes:
 ```
 sudo kubectl get nodes
 ```
