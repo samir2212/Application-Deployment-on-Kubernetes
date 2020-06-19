@@ -62,3 +62,4 @@ sudo kubectl get nodes
 ## K8S Deployment and Update:
 
 
+
