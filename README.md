@@ -50,7 +50,7 @@ sudo kubeadm join $controller_private_ip:6443 --token $token --discovery-token-c
 ```
 sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
-10- Run the following command to view the status of the network:
+10- Run the following command to view the status of the network and show the containers of K8S:
 ```
 kubectl get pods --all-namespaces
 ```
@@ -58,5 +58,7 @@ kubectl get pods --all-namespaces
 ```
 sudo kubectl get nodes
 ```
+
+## K8S Deployment and Update:
 
 
