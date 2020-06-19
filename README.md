@@ -41,6 +41,19 @@ sudo apt install kubeadm
 ```
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
+9- To start using your cluster, run the following command:
+```
+mkdir -p $HOME/.kube
+```
+```
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
+```
+```
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+```
+
 9- You can now join any number of machines by running the following on each node as root:
 ```
 sudo kubeadm join $controller_private_ip:6443 --token $token --discovery-token-ca-cert-hash $hash
