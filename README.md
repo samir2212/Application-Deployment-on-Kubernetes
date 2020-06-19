@@ -67,7 +67,7 @@ sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Do
 ```
 kubectl get pods --all-namespaces
 ```
-13- Run the following command on master to check the all nodes:
+13- Run the following command on master to check the all nodes of cluster:
 ```
 sudo kubectl get nodes
 ```
