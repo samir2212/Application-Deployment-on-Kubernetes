@@ -1,4 +1,4 @@
-# Install-Kubernetes-Ubuntu
+# Kubernetes For CI/CD
 ##  Project Overview
 
 The purpose of this project was to install K8S on Ubuntu VM by Setting up a Kubernetes cluster and learn the basics of K8S commands by applying it to my docker image [website hosted on Nginx container](https://hub.docker.com/repository/registry-1.docker.io/samir2296/containerization/tags?page=1).
