@@ -119,3 +119,4 @@ kubectl rollout history deploy nginx-deployment
 kubectl rollout undo deploy nginx-deployment --to-revision=1
 ```
 ## Preview
+![](Intializing-K8S-cluster.png)
