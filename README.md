@@ -84,8 +84,24 @@ By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-
 ```
 kubectl create -f kubernetes-service-yaml
 ```
-## Upgrading Application:
-It is easily to scale your application by changing number of replication in YAML file or even change the version of your image this is done by running the following command:
+## Scaling Application:
+It is easily to scale your application by changing number of replication in kubernetes-deployment YAML file by running the following command:
+```
+vim kubernetes-deployment-yaml
+```
 ```
 kubectl apply -f kubernetes-deployment-yaml
 ```
+## Upgrading Application:
+1-  Run the following command to upgrade your application by changine image in kubernetes-deployment YAML file:
+```
+vim kubernetes-deployment-yaml
+```
+```
+kubectl apply -f kubernetes-deployment-yaml
+```
+2- Run the following command to see history of changes made for image version kubernetes-deployment:
+```
+kubectl rollout history deploy mynginx-deployment
+```
+2-
