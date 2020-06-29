@@ -81,3 +81,6 @@ kubectl create -f kubernetes-deployment-yaml
 ## Accessing your Applications:
 By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/Kubernetes-service-yaml) allows the created pods from deployment yaml file to be accessible from outside.
 
+```
+kubectl create -f kubernetes-service-yaml
+```
