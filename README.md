@@ -72,7 +72,7 @@ kubectl get pods --all-namespaces
 sudo kubectl get nodes
 ```
 
-## K8S Deployment and Update:
-
+## K8S CI/CD:
+The simplest way to deploy your app is to use the kubectl create command by  using created file [kubernetes-deployment-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/kubernetes-deployment-yaml)
 
 
