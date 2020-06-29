@@ -73,6 +73,9 @@ sudo kubectl get nodes
 ```
 
 ## K8S CI/CD:
-The simplest way to deploy your app is to use the kubectl create command by  using created file [kubernetes-deployment-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/kubernetes-deployment-yaml)
-
+The simplest way to deploy your app is to use the kubectl create command by using created file [kubernetes-deployment-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/kubernetes-deployment-yaml).
+To create the pod from your YAML file, use the kubectl create command:
+```
+kubectl create -f
+```
 
