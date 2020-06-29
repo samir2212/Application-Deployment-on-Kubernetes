@@ -71,8 +71,6 @@ kubectl get pods --all-namespaces
 ```
 sudo kubectl get nodes
 ```
-# K8S CI/CD
-K8S allows you to manage your application life cycle easily by upgrading and roll back easily
 ## Create Deployment YAML:
 The simplest way to deploy your app from YAML file [kubernetes-deployment-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/kubernetes-deployment-yaml) is to use the kubectl create command:
 ```
@@ -92,7 +90,7 @@ vim kubernetes-deployment-yaml
 ```
 kubectl apply -f kubernetes-deployment-yaml
 ```
-## Upgrading Application:
+## Upgrading and Rollback Versions:
 1-  Run the following command to upgrade your application by changine image in kubernetes-deployment YAML file:
 ```
 vim kubernetes-deployment-yaml
@@ -100,8 +98,11 @@ vim kubernetes-deployment-yaml
 ```
 kubectl apply -f kubernetes-deployment-yaml
 ```
-2- Run the following command to see history of changes made for image version kubernetes-deployment:
+2- Run the following command to see history of changes made for image version kubernetes-deployment, also the output od]f this command help you in rollback:
 ```
-kubectl rollout history deploy mynginx-deployment
+kubectl rollout history deploy nginx-deployment
 ```
-2-
+3- Run the following command to roll back to older version:
+```
+kubectl rollout undo deploy nginx-deployment --to-revision=1
+```
