@@ -76,11 +76,23 @@ The simplest way to deploy your app from YAML file [kubernetes-deployment-yaml](
 ```
 kubectl create -f kubernetes-deployment-yaml
 ```
+Run the following command to list all deployments:
+```
+kubectl get deploy
+```
+Run the following command to know more information about your deployment process:
+```
+kubectl describe deploy name-of-your-deployment
+```
 ## Accessing your Applications:
 By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/Kubernetes-service-yaml) allows the created pods from deployment yaml file to be accessible from outside.
 
 ```
 kubectl create -f kubernetes-service-yaml
+```
+Run the following command to list all services:
+```
+kubectl get svc
 ```
 ## Scaling Application:
 It is easily to scale your application by changing number of replication in kubernetes-deployment YAML file by running the following command:
