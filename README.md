@@ -84,3 +84,8 @@ By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-
 ```
 kubectl create -f kubernetes-service-yaml
 ```
+## Editing kubernetes-deployment-yaml File:
+It is easily to have more replica by changing number of replication in YAML file or even change the version of your image this is done by running the following command:
+```
+kubectl apply -f kubernetes-deployment-yaml
+```
