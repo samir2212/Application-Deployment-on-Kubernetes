@@ -79,5 +79,5 @@ The simplest way to deploy your app from YAML file [kubernetes-deployment-yaml](
 kubectl create -f kubernetes-deployment-yaml
 ```
 ## Accessing your Applications:
-By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/Kubernetes-service-yaml) allows the created pods to be accessible from outside.
+By using your [Kubernetes-service-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/Kubernetes-service-yaml) allows the created pods from deployment yaml file to be accessible from outside.
 
