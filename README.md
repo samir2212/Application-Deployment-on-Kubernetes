@@ -71,7 +71,7 @@ kubectl get pods --all-namespaces
 ```
 sudo kubectl get nodes
 ```
-## Create Deployment YAML:
+## Deployment:
 The simplest way to deploy your app from YAML file [kubernetes-deployment-yaml](https://github.com/samir2212/Kubernetes-CICD-Project/blob/master/kubernetes-deployment-yaml) is to use the kubectl create command:
 ```
 kubectl create -f kubernetes-deployment-yaml
