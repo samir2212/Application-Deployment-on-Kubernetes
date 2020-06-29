@@ -98,11 +98,11 @@ vim kubernetes-deployment-yaml
 ```
 kubectl apply -f kubernetes-deployment-yaml
 ```
-2- Run the following command to see history of changes made for image version kubernetes-deployment, also the output od]f this command help you in rollback:
+2- Run the following command to see history of changes made for image version kubernetes-deployment, also the output of this command help you in rollback:
 ```
 kubectl rollout history deploy nginx-deployment
 ```
-3- Run the following command to roll back to older version:
+3- Run the following command to rollback to older version:
 ```
 kubectl rollout undo deploy nginx-deployment --to-revision=1
 ```
