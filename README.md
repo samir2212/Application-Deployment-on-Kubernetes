@@ -123,6 +123,7 @@ kubectl rollout undo deploy nginx-deployment --to-revision=1
 ![](Intializing-K8S-cluster-2.png)
 ![](cluster-network.png)
 ![](K8S-Pods.png)
+![](pods-service-deployments.png)
 
 
 
