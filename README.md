@@ -1,4 +1,4 @@
-# Kubernetes For CI/CD
+# Application Deployment on Kubernetes
 ##  Project Overview
 
 The purpose of this project was to set up a Kubernetes cluster on Ubuntu VM's to learn the basics of kubectl commands by applying it to my docker images [website hosted on Nginx container](https://hub.docker.com/repository/registry-1.docker.io/samir2296/containerization/tags?page=1) that gives you flexiblity to upgrade and rollback between your image versions easily .
