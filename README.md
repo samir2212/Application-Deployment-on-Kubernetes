@@ -1,7 +1,7 @@
 # Kubernetes For CI/CD
 ##  Project Overview
 
-The purpose of this project was to set up a Kubernetes cluster on Ubuntu VM's to learn the basics of kubectl commands by applying it to my docker images [website hosted on Nginx container](https://hub.docker.com/repository/registry-1.docker.io/samir2296/containerization/tags?page=1) that gives you flexiblity to upgrade and roll back between your image versions easily .
+The purpose of this project was to set up a Kubernetes cluster on Ubuntu VM's to learn the basics of kubectl commands by applying it to my docker images [website hosted on Nginx container](https://hub.docker.com/repository/registry-1.docker.io/samir2296/containerization/tags?page=1) that gives you flexiblity to upgrade and rollback between your image versions easily .
 
 ### What are the benefits of using K8S?
 K8S is container orchestrator used to automate, configure and scheduling of containers at differnet node. K8S helps that big monolithic legacy applications are being broken down into smaller, independently running components called microservices. 
